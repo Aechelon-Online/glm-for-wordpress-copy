@@ -1,12 +1,38 @@
-const videoPlayer = document.querySelector('.video-player')
-const video = videoPlayer.querySelector('.video')
-const playButton = videoPlayer.querySelector('.play-button')
-const volume = videoPlayer.querySelector('.volume')
-const currentTimeElement = videoPlayer.querySelector('.current')
-const durationTimeElement = videoPlayer.querySelector('.duration')
+const videoConsole = document.querySelector('.video-wrapper')
+const video = videoConsole.querySelectorAll('.video')
+const playButton = document.querySelectorAll('.play-button')
+const volume = videoConsole.querySelectorAll('.volume')
+const currentTimeElement = videoConsole.querySelectorAll('.current')
+const durationTimeElement = videoConsole.querySelectorAll('.duration')
+const progress = videoConsole.querySelectorAll('.video-progress')
+const progressBar = videoConsole.querySelectorAll('.video-progress-filled')
 
-// Play and Pause Button
-playButton.addEventListener('click', (e) => {
+
+
+
+
+const videos = ['greg-luce-music-promo.mov','rocket-man-demo-clip.mov', 'hob-wedding-fancy-like-moves.mov','private-party-doobie-brothers-clip.mov','wedding-groove-cupid-shuffle.mov']
+
+let videoPlayer = ""
+for (const vid of videos) {
+
+videoPlayer += `
+    <div class="video-player">
+        <video src="../img/${vid}" class="video" controls></video>
+    </div>
+    `
+    
+
+
+}
+
+
+document.querySelector('.video-wrapper').innerHTML = videoPlayer
+
+console.log(document.querySelectorAll('.play-button'))
+console.log(playButton)
+
+document.querySelectorAll('.play-button').addEventListener('click', function(e){
     if (video.paused) {
         video.play()
         e.target.textContent = '❚❚'
@@ -14,22 +40,19 @@ playButton.addEventListener('click', (e) => {
         video.pause()
         e.target.textContent = '▶'
     }
+    
 })
 
-// Volume
-volume.addEventListener('mousemove', (e) => {
-    video.volume = e.target.value
-})
+{/* <div class="player-controls">
+            <div class="video-progress">
+                <div class="video-progress-filled"></div>
+            </div>
 
-// Current Time and Duration
-const currentTime = () => {
-    let currentMinutes = Math.floor(video.currentTime / 60)
-    let currentSeconds = Math.floor(video.currentTime - currentMinutes * 60)
-    let durationMinutes = Math.floor(video.duration / 60)
-    let durationSeconds = Math.floor(video.duration - durationMinutes * 60)
+            <button class="play-button" title="play">▶</button>
 
-    currentTimeElement.innerHTML = `${currentMinutes}:${currentSeconds < 10 ? '0'+currentSeconds : currentSeconds}`
-    durationTimeElement.innerHTML = `${durationMinutes}:${durationSeconds < 10 ? '0'+durationSeconds : durationSeconds}`
-}
-
-video.addEventListener('timeupdate', currentTime)
+            <input type="range" class="volume" min="0" max="1" step="0.01" value="1" />
+    
+            <div class="time">
+                <span class="current">0:00</span> / <span class="duration">0:00</span>
+            </div>
+        </div> */}

@@ -24,35 +24,41 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
         <script async src="../js/video.js"></script>
+        <script async src="../js/script.js"></script>
+        
+        
+        
 </head>
-<body class="page-body"><div class="header-page">
-    <header>
-        <div class="menu-wrapper">
-            <div class="flex-tab">
-                    <div>
-                        <div class="spot-mark">X</div>
+<body class="page-body">
+    <div class="header-page">
+        <header>
+            <div class="menu-wrapper">
+                <div class="flex-tab">
+                        <div>
+                            <div class="spot-mark">X</div>
+                        </div>
+                    <div class="menu-box">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
                     </div>
-                <div class="menu-box">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+                    <div class="hidden-box"></div>
                 </div>
-                <div class="hidden-box"></div>
             </div>
-        </div>
-        <div class="nav-box">
-            <nav class="nav">
-                <ul class="mobile-menu">
-                    <li><a class="nav-links" href="../bio/index.html">BIO</a></li>
-                    <li><a class="nav-links" href="../media/index.html">MEDIA</a></li>
-                    <li><a class="nav-links" href="../events/index.html">EVENTS</a></li>
-                    <li><a class="nav-links" href="../reviews/index.html">REVIEWS</a></li>
-                    <li><a class="nav-links" href="../blog/index.html">BLOG</a></li>
-                    <li><a class="nav-links" href="../contact/index.html">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+            <div class="nav-box" style="animation: none;">
+                <nav class="nav">
+                    <ul class="mobile-menu">
+                        <li><a class="nav-links" href="../bio/index.html">BIO</a></li>
+                        <li><a class="nav-links" href="../media/index.html">MEDIA</a></li>
+                        <li><a class="nav-links" href="../events/index.html">EVENTS</a></li>
+                        <li><a class="nav-links" href="../reviews/index.html">REVIEWS</a></li>
+                        <li><a class="nav-links" href="../blog/index.html">BLOG</a></li>
+                        <li><a class="nav-links" href="../contact/index.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>  
 
 
     <div class="logo-headlines__page">
@@ -61,23 +67,8 @@
             <p id="glm-text__page">Greg Luce Music<p>
         </div>
     </div>
-    <h1 class="title-text">Media</h1>
-    <div class="video-wrapper">
-        <div class="video-player">
-            <video src="../img/greg-luce-music-promo.mp4" class="video"></video>
-            <div class="button-time">
-                <div class="player-controls">
-                    <button class="play-button" title="play">▶</button>
-                </div>
-                <div class="time">
-                    <span class="current">0:00</span> / <span class="duration">0:00</span>
-                </div>
-            </div>
-
-                <input type="range" class="volume" min="0" max="1" step="0.01" value="1" />
-            
-        </div>
-    </div>
+    <h1 class="title-text media-header">Media</h1>
+    <div class="video-wrapper"></div>
     <div class="footer-tag">
         <div id="social-logos">
             <a href="https://www.facebook.com/GregLuceMusic" target="_blank"><img src="../img/blue-facebook.png" alt="Greg Luce Music - Facebook logo" id="fb-logo" class="social"></a>
@@ -86,5 +77,8 @@
         </div>
         <p>Greg Luce Music 2021</p>
     </div>
+
+    
+    
 </body>
 </html>

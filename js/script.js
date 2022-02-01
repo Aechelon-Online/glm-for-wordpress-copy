@@ -13,10 +13,3 @@ menuWrapper.addEventListener('click', () => {
     spotMark.classList.toggle("cross");
 
 });
-
-checkboxes.addEventListener('click', () => {
-    document.querySelector(".list").classList.toggle("show");
-
-});
-
-
