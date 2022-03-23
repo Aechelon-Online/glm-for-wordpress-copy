@@ -650,6 +650,54 @@ button p {
 .social {
     margin: clamp(0.25rem, 2vw, 0.5rem);
 }
+.short-form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.short-form_info {
+    color: white;
+    font-size: 36px;
+    padding-bottom: 6px;
+    font-family: Arial;
+}
+.short-form_layout {
+    background-color:rgb(255, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info_short-form {
+    display: flex;
+    flex-flow: column;
+}
+.short-form_inputs {
+    width: 70vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column;
+}
+.short-form_text {
+    height: 10vh;
+    font-size: 20px;
+    background-color:rgb(250, 247, 212);
+    text-align: center;
+}
+.short-form_label {
+    font-size: 24px;
+}
+.send-button {
+    height: 5vh;
+    width: 60vw;
+    margin-top: 3vh;
+}
+.send-button p {
+    font-size: 18px;
+    font-weight: bold;
+}
 
 /* Pages Design */
 
