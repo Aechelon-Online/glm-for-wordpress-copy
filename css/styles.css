@@ -351,7 +351,7 @@ li {
     padding: 5vw;
 }
 #glm-dj-text {
-    font-size: clamp(20px, 3.5vw, 48px);
+    font-size: clamp(20px, 4.5vw, 48px);
     padding: 0;
     margin: -5vw;
 }
