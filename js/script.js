@@ -11,5 +11,9 @@ menuWrapper.addEventListener('click', () => {
     menuWrapper.classList.toggle("move-tab");
     menuBox.classList.toggle("hide-lines");
     spotMark.classList.toggle("cross");
+});
+
+checkboxes.addEventListener('click', () => {
+    document.querySelector(".list").classList.toggle("show");
 
 });
