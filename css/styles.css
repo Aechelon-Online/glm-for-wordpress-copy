@@ -346,7 +346,7 @@ li {
     font-family: 'Red Hat Display';
     color: white;
     text-align: justify;
-    font-size: clamp(14px, 3.5vw, 34px);
+    font-size: clamp(20px, 3.5vw, 34px);
     text-shadow: 1px 1px black;
     padding: 5vw;
 }
@@ -361,7 +361,7 @@ li {
 
 .bumper {
     width: 100%;
-    height: 100vh;
+    height: 85vh;
 }
 
 .text-image-dj {
